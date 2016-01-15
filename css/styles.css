@@ -2,7 +2,7 @@
   display: none;
   padding: 25px;
 }
-.kidCount,.abroadUSA, .travelAbroad, .weather, .terrain, .mobileStay, .accomodations, .activities {
+.kidCount,#abroadUSA, #travelAbroad, #weather, #terrain, #mobileStay, #accomodations, #activities, #getResults {
   display: none;
 }
 

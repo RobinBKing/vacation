@@ -21,101 +21,101 @@
       </div>
       <br></br>
       <form id="questions">
-        <div class="form-group whoWith">
+        <div class="form-group" id="whoWith">
           <label>First let's find out who will be going with you?</label>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckPartner">Spouse/Partner
+              <input type="checkbox" id="partnerCheckbox" value="Spouse/Partner">Spouse/Partner
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckPartner">Kids
+              <input type="checkbox" id="kidsCheckbox" value="Kid(s)">Kids
             </label>
           </div>
         </div>
-        <div class="form-group kidCount">
+        <div class="form-group" id="kidCount">
           <label for="kidCount">How many?</label>
-          <input id="kidCount" class="form-control" type="text">
+          <input id="kidAmount" class="form-control" type="text">
         </div>
-        <div class="form-group abroadUSA">
+        <div class="form-group" id="abroadUSA">
           <label for="abroadUSA">Travel abroad or stay in the US?</label>
           <select id="abroadUSA">
             <option value="abroad">Travel abroad</option>
             <option value="usa">Stay in in the US</option>
           </select>
         </div>
-        <div class="form-group travelAbroad">
+        <div class="form-group" id="travelAbroad">
           <label>What part of the world would you like to go to?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="europe">Europe
+              <input type="radio" id="europe" value="Europe">Europe
             </label>
           </div>
            <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="africa">Africa
+              <input type="radio" id="africa" value="Africa">Africa
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="middleEast">Middle East
+              <input type="radio" id="middleEast" value="Middle East">Middle East
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="asia">Asia/South Pacific
+              <input type="radio" id="asia" value="Asia/South Pacific">Asia/South Pacific
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="southAmerica">Central/South America
+              <input type="radio"id="southAmerica" value="Central/South America">Central/South America
             </label>
           </div>
         </div>
-        <div class="form-group weather">
+        <div class="form-group" id="weather">
           <label>How do you like your weather?</label>
           <div class="radio hotHumid">
             <label>
-              <input type="radio" name="optradio" id="hotHumid">Hot and humid
+              <input type="radio" id="hotHumid">Hot and humid
             </label>
           </div>
           <div class="radio coolMoist">
             <label>
-              <input type="radio" name="optradio" id="coolMoist">Cool and moist
+              <input type="radio" id="coolMoist">Cool and moist
             </label>
           </div>
           <div class="radio hotDry">
             <label>
-              <input type="radio" name="optradio" id="hotDry">Hot and dry
+              <input type="radio" id="hotDry">Hot and dry
             </label>
           </div>
           <div class="radio coldCrisp">
             <label>
-              <input type="radio" name="optradio" id="coldCrisp">Cold and crisp
+              <input type="radio" id="coldCrisp">Cold and crisp
             </label>
           </div>
         </div>
-        <div class="form-group terrain">
+        <div class="form-group" id="terrain">
           <label>What kind of terrain do you prefere?</label>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckWater">On the Water
+              <input type="checkbox" id="waterCheckbox" value="On the Water">On the Water
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckBeach">On the Beach
+              <input type="checkbox" id="beachCheckbox" value="On the Beach">On the Beach
             </label>
           </div>
           <div class="checkbox">
             <label>
-            <input type="checkbox" name="optcheckbox" id="ckMountains">In the Mountains
+            <input type="checkbox" id="mountainsCheckbox" value="In the Mountains">In the Mountains
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckDesert">In the Desert
+              <input type="checkbox"id="desertCheckbox" value="In the Desert">In the Desert
             </label>
           </div>
           <div class="checkbox">
@@ -124,15 +124,15 @@
             </label>
           </div>
         </div>
-        <div class="form-group mobileStay">
+        <div class="form-group" id="mobileStay">
           <label for="mobileStay">Do you want to be mobile or stay in one place?</label>
           <select id="mobileStay">
-            <option value="move">Move around</option>
+            <option value="mobile">Move around</option>
             <option value="stay">Stay in on place</option>
             <option value="either">I don't care</option>
           </select>
         </div>
-        <div class="form-group accomodations">
+        <div class="form-group" id="accomodations">
           <label>How about accomodations?</label>
           <div class="radio">
             <label>
@@ -155,7 +155,7 @@
             </label>
           </div>
         </div>
-        <div class="form-group activities">
+        <div class="form-group" id="activities">
           <label>What activities do you like?</label>
           <div class="checkbox">
             <label>
@@ -198,55 +198,17 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">See your ultimate Vacation!</button>
+        <button class="getResults" type="submit" class="btn btn-primary">See your ultimate Vacation!</button>
       </form>
     <div>
 
-     <div id="yoda" class="result">
+     <div id="resultHeader" class="result">
        <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Yoda!</h3>
-       <img src="img/yoda.jpg">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-     </div>
-     <div id="vader" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Darth Vader!</h3>
-       <img src="img/vader.jpg">
-       <p>You are drawn to the dark side, so any other answer you gave has been overridden. You like to be in charge and you always get what you want . . . almost.</p>
-     </div>
-     <div id="leia" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Princess Leia!</h3>
-       <img src="img/leia.png">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-     </div>
-     <div id="luke" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Luke Skywalker!</h3>
-       <img src="img/luke.jpg">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-     </div>
-     <div id="rey" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Rey!</h3>
-       <img src="img/rey.jpg">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-     </div>
-     <div id="han" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Han Solo!</h3>
-       <img src="img/han.jpeg">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-     </div>
-     <div id="chewy" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal celebrity match is Chewy!</h3>
-       <img src="img/chewy.jpg">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-     </div>
-     </p>
-     <p class="bruteForce">You don't need the force to get things done.</p>
-     <p class="theForce">The force is strong with you!</p>
+       <h3>Based on your quiz results, your ideal in <span class="location"></span></h3>
+       <img src="">
+       <p>
+         "You <span class="whoElse"> will be <span class="accomodations"></span> and you will be <span class="activity"></span>  <span class="terrain"></span> in <span class="weather"></span>
+       </p>
    </div>
    <br></br>
   </body>
