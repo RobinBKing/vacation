@@ -1,0 +1,31 @@
+.result {
+  display: none;
+  padding: 25px;
+}
+.kidCount,.abroadUSA, .travelAbroad, .weather, .terrain, .mobileStay, .accomodations, .activities {
+  display: none;
+}
+
+.result img {
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  float: left;
+  padding-bottom: 25px;
+}
+
+.header img {
+  padding: 10px;
+}
+
+.result p {
+  font-size: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+#kidCount {
+    width: 10px;
+}

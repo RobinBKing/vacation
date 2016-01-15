@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>The Ultimate Vacation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>It's time for a Vacation!</h1>
+        <h3>Your tired, stressed out. A vacation is just what the doctor ordered.</h3>
+        <img src="img/Vacation-Prescription.jpg">
+        <h3>But where to go?</h3>
+        <img src="img\multi-signs.jpg">
+        <p class="lead">Let us Help You Find the Ultimate Vacation!</p>
+        <p class="lead">To do that, we need to find out a little bit about you.</p>
+      </div>
+      <br></br>
+      <form id="questions">
+        <div class="form-group whoWith">
+          <label>First let's find out who will be going with you?</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckPartner">Spouse/Partner
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckPartner">Kids
+            </label>
+          </div>
+        </div>
+        <div class="form-group kidCount">
+          <label for="kidCount">How many?</label>
+          <input id="kidCount" class="form-control" type="text">
+        </div>
+        <div class="form-group abroadUSA">
+          <label for="abroadUSA">Travel abroad or stay in the US?</label>
+          <select id="abroadUSA">
+            <option value="abroad">Travel abroad</option>
+            <option value="usa">Stay in in the US</option>
+          </select>
+        </div>
+        <div class="form-group travelAbroad">
+          <label>What part of the world would you like to go to?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="europe">Europe
+            </label>
+          </div>
+           <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="africa">Africa
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="middleEast">Middle East
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="asia">Asia/South Pacific
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="southAmerica">Central/South America
+            </label>
+          </div>
+        </div>
+        <div class="form-group weather">
+          <label>How do you like your weather?</label>
+          <div class="radio hotHumid">
+            <label>
+              <input type="radio" name="optradio" id="hotHumid">Hot and humid
+            </label>
+          </div>
+          <div class="radio coolMoist">
+            <label>
+              <input type="radio" name="optradio" id="coolMoist">Cool and moist
+            </label>
+          </div>
+          <div class="radio hotDry">
+            <label>
+              <input type="radio" name="optradio" id="hotDry">Hot and dry
+            </label>
+          </div>
+          <div class="radio coldCrisp">
+            <label>
+              <input type="radio" name="optradio" id="coldCrisp">Cold and crisp
+            </label>
+          </div>
+        </div>
+        <div class="form-group terrain">
+          <label>What kind of terrain do you prefere?</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckWater">On the Water
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckBeach">On the Beach
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+            <input type="checkbox" name="optcheckbox" id="ckMountains">In the Mountains
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckDesert">In the Desert
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckAllTerrain">All the above
+            </label>
+          </div>
+        </div>
+        <div class="form-group mobileStay">
+          <label for="mobileStay">Do you want to be mobile or stay in one place?</label>
+          <select id="mobileStay">
+            <option value="move">Move around</option>
+            <option value="stay">Stay in on place</option>
+            <option value="either">I don't care</option>
+          </select>
+        </div>
+        <div class="form-group accomodations">
+          <label>How about accomodations?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="plush">plush
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="reasonable">Reasonable
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="budget">On a budget
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optradio" id="rustic">Rustic
+            </label>
+          </div>
+        </div>
+        <div class="form-group activities">
+          <label>What activities do you like?</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckHiking">Hiking
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckSwimming">Swimming
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckFishing">Fishing
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckGolfing">Golfing
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckZip"> Zip Lining
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckHorseback">Horseback Riding
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckRelaxing">Relaxing
+            </label>
+          </div>
+           <div class="checkbox">
+            <label>
+              <input type="checkbox" name="optcheckbox" id="ckAll">All the Above
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">See your ultimate Vacation!</button>
+      </form>
+    <div>
+
+     <div id="yoda" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Yoda!</h3>
+       <img src="img/yoda.jpg">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     </div>
+     <div id="vader" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Darth Vader!</h3>
+       <img src="img/vader.jpg">
+       <p>You are drawn to the dark side, so any other answer you gave has been overridden. You like to be in charge and you always get what you want . . . almost.</p>
+     </div>
+     <div id="leia" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Princess Leia!</h3>
+       <img src="img/leia.png">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     </div>
+     <div id="luke" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Luke Skywalker!</h3>
+       <img src="img/luke.jpg">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     </div>
+     <div id="rey" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Rey!</h3>
+       <img src="img/rey.jpg">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     </div>
+     <div id="han" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Han Solo!</h3>
+       <img src="img/han.jpeg">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     </div>
+     <div id="chewy" class="result">
+       <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal celebrity match is Chewy!</h3>
+       <img src="img/chewy.jpg">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+     </div>
+     </p>
+     <p class="bruteForce">You don't need the force to get things done.</p>
+     <p class="theForce">The force is strong with you!</p>
+   </div>
+   <br></br>
+  </body>
+</html>
