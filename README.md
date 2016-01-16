@@ -5,6 +5,5 @@ Setup: the directory CSS with with the file styles must be included.
        All other references are external. Must have internet connection for page to load.
 Site url: http://robinbking.github.io/vacation
 
-
 © 2016 Robin B. King
 ]
