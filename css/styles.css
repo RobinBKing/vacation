@@ -2,9 +2,9 @@
   display: none;
   padding: 25px;
 }
-.kidCount,#abroadUSA, #travelAbroad, #weather, #terrain, #mobileStay, #accomodations, #activities, #getResults {
+/*.kidCount,#abroadUSA, #travelAbroad, #weather, #terrain, #mobileStay, #accomodations, #activities, #getResults {
   display: none;
-}
+}*/
 
 .result img {
   width: 400px;
@@ -27,5 +27,5 @@
 }
 
 #kidCount {
-    width: 10px;
+    width: 20px;
 }

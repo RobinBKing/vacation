@@ -12,7 +12,7 @@ $(document).ready(function() {
           whoElse += $("input#kidAmount").val() + " kids "
         }
         else{
-          whoElse += " child "    
+          whoElse += " child "
         }
       }
     }
@@ -41,6 +41,112 @@ $(document).ready(function() {
       else if($("input#southAmerica").val()){
         abroad = $("input#southAmerica").val();
       };
+      //mobileStay
+      var mobileStay = $("select#mobileStay").val();
+      //accomodations
+      var accomodations = "";
+      if($("input#plush") || $("input#reasonable")){
+        if($("select#mobileStay").val(); === "mobile"){
+          accomodations = " on a cruise "
+        }
+        else {
+          accomodations = " at a resort "
+        }
+      }
+      else if{$("input#budget")){
+        if($("select#mobileStay").val(); === "mobile"){
+          accomodations = " in an RV "
+        }
+        else {
+          accomodations = " in a cabin "
+        }
+        else if{$("input#rustic"){
+          accomodations = " in a tent "
+          }
+      }
+      //activities
+      var activities = "";
+      if($("input#hikingCheckbox")){
+        activities = "hiking";
+      }
+      if($("input#swimmingCheckbox")){
+        if(activities != ""){
+          activities += " and swimming"
+        }
+        else {
+          activities = "swimming"
+        }
+      }
+      if($("input#fishingCheckbox")){
+        if(activities != ""){
+          activities += " and fishing"
+        }
+        else {
+          activities = "fishing"
+        }
+      }
+      if($("input#golfingCheckbox")){
+        if(activities != ""){
+          activities += " and golfing"
+        }
+        else {
+          activities = "golfing"
+        }
+      }
+      if($("input#zipCheckbox")){
+        if(activities != ""){
+          activities += " and riding a zipline"
+        }
+        else {
+          activities = "riding a zipline"
+        }
+      }
+      if($("input#horsebackCheckbos")){
+        if(activities != ""){
+          activities += " and horseback ridding"
+        }
+        else {
+          activities = "horseback ridding"
+        }
+      }
+      if($("input#relaxingCheckbox")){
+        if(activities != ""){
+          activities += " and relaxing"
+        }
+        else {
+          activities = "relaxing"
+        }
+      }
+      //terrain
+      var terrain = "";
+      if($("input#waterCheckbox").val()){
+        terrain = " on the water"
+      }
+      if($("input#beachCheckbox").val()){
+        if(terrain ! = ""){
+          terrain += " and on the beach";
+        }
+        else {
+          terrain = "on the beach"
+        }
+      }
+      if($("input#mountainsCheckbox").val()){
+        if(terrain ! = ""){
+          terrain += " and in the mountains";
+        }
+        else {
+          terrain = "in the mountains"
+        }
+      }
+      if($("input#desertCheckbox").val()){
+        if(terrain ! = ""){
+          terrain += " and in the desert";
+        }
+        else {
+          terrain = "in the desert"
+        }
+      }
+      //weather
       //weather
       var weather = "";
       if($("input#hotHumid").val()){
@@ -58,20 +164,13 @@ $(document).ready(function() {
       else if($("input#coldCrisp").val()){
         weather = $("input#coldCrisp").val();
       };
-      //terrain
-      var terrain =
-      var water =  $("input#waterCheckbox").val();
-      var beach =  $("input#beachCheckbox").val();
-      var mountains =  $("input#mountainsCheckbox").val();
-      var desert =  $("input#desertCheckbox").val();
-      //mobileStay
-      var mobileStay = $("select#mobileStay").val();
-      //accomodations
-
 
       //fill classes
       $(".whoElse").text(whoElse);
-    }
+      $(".accomodations").text(accomodations);
+      $(".activity").text(activity);
+      $(".terrain").text(terrain);
+      $(".weather").text(weather);      }
 
 
     var humanNon = $("select#humanNon").val();

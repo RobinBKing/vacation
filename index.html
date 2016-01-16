@@ -21,21 +21,21 @@
       </div>
       <br></br>
       <form id="questions">
-        <div class="form-group" id="whoWith">
+        <div class="form-group">
           <label>First let's find out who will be going with you?</label>
           <div class="checkbox">
             <label>
-              <input type="checkbox" id="partnerCheckbox" value="Spouse/Partner">Spouse/Partner
+              <input type="checkbox" id="partnerCheckbox">Spouse/Partner
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" id="kidsCheckbox" value="Kid(s)">Kids
+              <input type="checkbox" id="kidsCheckbox">input>Kids
             </label>
           </div>
         </div>
         <div class="form-group" id="kidCount">
-          <label for="kidCount">How many?</label>
+          <label for="kidAmount">How many?</label>
           <input id="kidAmount" class="form-control" type="text">
         </div>
         <div class="form-group" id="abroadUSA">
@@ -49,27 +49,27 @@
           <label>What part of the world would you like to go to?</label>
           <div class="radio">
             <label>
-              <input type="radio" id="europe" value="Europe">Europe
-            </label>
-          </div>
-           <div class="radio">
-            <label>
-              <input type="radio" id="africa" value="Africa">Africa
+              <input type="radio"  name="optradio" id="europe">Europe
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" id="middleEast" value="Middle East">Middle East
+              <input type="radio"  name="optradio" id="africa" >Africa
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" id="asia" value="Asia/South Pacific">Asia/South Pacific
+              <input type="radio" id="middleEast"  name="optradio">Middle East
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio"id="southAmerica" value="Central/South America">Central/South America
+              <input type="radio" id="asia"  name="optradio">Asia/South Pacific
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio"id="southAmerica"  name="optradio">Central/South America
             </label>
           </div>
         </div>
@@ -77,22 +77,22 @@
           <label>How do you like your weather?</label>
           <div class="radio hotHumid">
             <label>
-              <input type="radio" id="hotHumid">Hot and humid
+              <input type="radio" id="hotHumid" name="optradio">Hot and humid
             </label>
           </div>
           <div class="radio coolMoist">
             <label>
-              <input type="radio" id="coolMoist">Cool and moist
+              <input type="radio" id="coolMoist" name="optradio">Cool and moist
             </label>
           </div>
           <div class="radio hotDry">
             <label>
-              <input type="radio" id="hotDry">Hot and dry
+              <input type="radio" id="hotDry" name="optradio">Hot and dry
             </label>
           </div>
           <div class="radio coldCrisp">
             <label>
-              <input type="radio" id="coldCrisp">Cold and crisp
+              <input type="radio" id="coldCrisp" name="optradio">Cold and crisp
             </label>
           </div>
         </div>
@@ -159,42 +159,37 @@
           <label>What activities do you like?</label>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckHiking">Hiking
+              <input type="checkbox" id="hikingCheckbox">Hiking
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckSwimming">Swimming
+              <input type="checkbox" id="swimmingCheckbox">Swimming
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckFishing">Fishing
+              <input type="checkbox" id="fishingCheckbox">Fishing
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckGolfing">Golfing
+              <input type="checkbox" id="golfingCheckbox">Golfing
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckZip"> Zip Lining
+              <input type="checkbox" id="zipCheckbox">Riding a Zip Line
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckHorseback">Horseback Riding
+              <input type="checkbox" id="horsebackCheckbos">Horseback Riding
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="optcheckbox" id="ckRelaxing">Relaxing
-            </label>
-          </div>
-           <div class="checkbox">
-            <label>
-              <input type="checkbox" name="optcheckbox" id="ckAll">All the Above
+              <input type="checkbox" id="relaxingCheckbox">Relaxing
             </label>
           </div>
         </div>
@@ -207,7 +202,7 @@
        <h3>Based on your quiz results, your ideal in <span class="location"></span></h3>
        <img src="">
        <p>
-         "You <span class="whoElse"> will be <span class="accomodations"></span> and you will be <span class="activity"></span>  <span class="terrain"></span> in <span class="weather"></span>
+         "You <span class="whoElse"> will be <span class="accomodations"></span> and you will be <span class="activity"></span>  <span class="terrain"></span> where the weather is <span class="weather"></span>."
        </p>
    </div>
    <br></br>
