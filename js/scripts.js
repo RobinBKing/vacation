@@ -77,35 +77,35 @@ $(document).ready(function() {
     }
 
     //activities
-    if($("input#hikingCheckbox").prop('checked')){
-      activity.push("hiking");
-      alert(activity.length);
-    }
-    if($("input#swimmingCheckbox").prop('checked')){
-      activity.push("swimming");
-    }
-    if($("input#fishingCheckbox")){
-       activity.push("fishing");
-    }
-    if($("input#golfingCheckbox")){
-      activity.push("golfing");
-    }
-    if($("input#zipCheckbox")){
-      activity.push("riding a zipline");
-    }
-    if($("input#horsebackCheckbos")){
-      activity.push("horseback ridding"
-    }
-    if($("input#relaxingCheckbox")){
-      activity.push("relaxing");
-    }
-    var activities = activity[0];
-
-    if(activity.length > 1){
-      for (i = 1; i < activity.length; i++) {
-        activities += " and " + activity[i];
-      }
-    }
+    // if($("input#hikingCheckbox").prop('checked')){
+    //   activity.push("hiking");
+    //   alert(activity.length);
+    // }
+    // if($("input#swimmingCheckbox").prop('checked')){
+    //   activity.push("swimming");
+    // }
+    // if($("input#fishingCheckbox")){
+    //    activity.push("fishing");
+    // }
+    // if($("input#golfingCheckbox")){
+    //   activity.push("golfing");
+    // }
+    // if($("input#zipCheckbox")){
+    //   activity.push("riding a zipline");
+    // }
+    // if($("input#horsebackCheckbos")){
+    //   activity.push("horseback ridding"
+    // }
+    // if($("input#relaxingCheckbox")){
+    //   activity.push("relaxing");
+    // }
+    // var activities = activity[0];
+    //
+    // if(activity.length > 1){
+    //   for (i = 1; i < activity.length; i++) {
+    //     activities += " and " + activity[i];
+    //   }
+    // }
     //   //terrain
     //   var terrain = "";
     //   if($("input#waterCheckbox").val()){
@@ -157,7 +157,7 @@ $(document).ready(function() {
     $(".location").text(location);
     $(".whoElse").text(whoElse);
     $(".accomodations").text(accomodations);
-    $(".activity").text(activities);
+    // $(".activity").text(activities);
     // $(".terrain").text(terrain);
     // $(".weather").text(weather);
 
