@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <title>The Ultimate Vacation</title>
   </head>
   <body>
@@ -16,87 +17,87 @@
         <img src="img/Vacation-Prescription.jpg">
         <h3>But where to go?</h3>
         <img src="img\multi-signs.jpg">
-        <p class="lead">Let us Help You Find the Ultimate Vacation!</p>
-        <p class="lead">To do that, we need to find out a little bit about you.</p>
+        <p>Let us Help You Find the Ultimate Vacation!</p>
+        <p>To do that, we need to find out a little bit about you.</p>
       </div>
-      <br></br>
-      <form id="questions">
+      <p>First let's find out who will be going with you:</p>
+      <form id="vacation">
         <div class="form-group">
-          <label>First let's find out who will be going with you?</label>
           <div class="checkbox">
-            <label>
-              <input type="checkbox" id="partnerCheckbox">Spouse/Partner
-            </label>
+            <label><input type="checkbox" id="partnerCheckbox" value="">Spouse/Partner</label>
           </div>
+        </div>
+        <div class="form-group">
           <div class="checkbox">
             <label>
-              <input type="checkbox" id="kidsCheckbox">input>Kids
+              <input type="checkbox" id="kidsCheckbox">Kids
             </label>
           </div>
         </div>
-        <div class="form-group" id="kidCount">
-          <label for="kidAmount">How many?</label>
-          <input id="kidAmount" class="form-control" type="text">
+        <div class="form-group">
+          <label for="kidCount">How many?</label>
+            <input id="kidCount" type="text">
         </div>
-        <div class="form-group" id="abroadUSA">
+        <div class="form-group">
           <label for="abroadUSA">Travel abroad or stay in the US?</label>
           <select id="abroadUSA">
             <option value="abroad">Travel abroad</option>
             <option value="usa">Stay in in the US</option>
           </select>
         </div>
-        <div class="form-group" id="travelAbroad">
+        <div class="form-group">
           <label>What part of the world would you like to go to?</label>
           <div class="radio">
             <label>
-              <input type="radio"  name="optradio" id="europe">Europe
+              <input type="radio"  name="optradioTravel" id="europe" value="Europe">Europe
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio"  name="optradio" id="africa" >Africa
+              <input type="radio"  name="optradioTravel" id="africa" value="Africa">Africa
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" id="middleEast"  name="optradio">Middle East
+              <input type="radio" id="middleEast"  name="optradioTravel" value="Middle East">Middle East
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" id="asia"  name="optradio">Asia/South Pacific
+              <input type="radio" id="asia"  name="optradioTravel" value="Asia/South Pacific">Asia/South Pacific
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio"id="southAmerica"  name="optradio">Central/South America
+              <input type="radio" id="southAmerica"  name="optradioTravel" value="Central/South America">Central/South America
             </label>
           </div>
         </div>
-        <div class="form-group" id="weather">
+
+        <!-- <div class="form-group" id="weather">
           <label>How do you like your weather?</label>
           <div class="radio hotHumid">
             <label>
-              <input type="radio" id="hotHumid" name="optradio">Hot and humid
+              <input type="radio" id="hotHumid" name="optradioWeather">Hot and humid
             </label>
           </div>
           <div class="radio coolMoist">
             <label>
-              <input type="radio" id="coolMoist" name="optradio">Cool and moist
+              <input type="radio" id="coolMoist" name="optradioWeather">Cool and moist
             </label>
           </div>
           <div class="radio hotDry">
             <label>
-              <input type="radio" id="hotDry" name="optradio">Hot and dry
+              <input type="radio" id="hotDry" name="optradioWeather">Hot and dry
             </label>
           </div>
           <div class="radio coldCrisp">
             <label>
-              <input type="radio" id="coldCrisp" name="optradio">Cold and crisp
+              <input type="radio" id="coldCrisp" name="optradioWeather">Cold and crisp
             </label>
           </div>
-        </div>
-        <div class="form-group" id="terrain">
+        </div> -->
+        <!-- <div class="form-group" id="terrain">
           <label>What kind of terrain do you prefere?</label>
           <div class="checkbox">
             <label>
@@ -123,8 +124,8 @@
               <input type="checkbox" name="optcheckbox" id="ckAllTerrain">All the above
             </label>
           </div>
-        </div>
-        <div class="form-group" id="mobileStay">
+        </div> -->
+        <div class="form-group">
           <label for="mobileStay">Do you want to be mobile or stay in one place?</label>
           <select id="mobileStay">
             <option value="mobile">Move around</option>
@@ -136,22 +137,22 @@
           <label>How about accomodations?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="plush">plush
+              <input type="radio" name="optradioAccomodations" id="plush">plush
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="reasonable">Reasonable
+              <input type="radio" name="optradioAccomodations" id="reasonable">Reasonable
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="budget">On a budget
+              <input type="radio" name="optradioAccomodations" id="budget">On a budget
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="optradio" id="rustic">Rustic
+              <input type="radio" name="optradioAccomodations" id="rustic">Rustic
             </label>
           </div>
         </div>
@@ -195,16 +196,16 @@
         </div>
         <button type="submit" class="btn btn-primary">See results</button>
       </form>
-    <div>
-
-     <div id="resultHeader" class="result">
-       <h2>Your Match</h2>
-       <h3>Based on your quiz results, your ideal in <span class="location"></span></h3>
-       <img src="">
-       <p>
+    </div>
+    <div class="result">
+      <h2>Your Match</h2>
+       <h3>Based on your quiz results, your ideal vacation is in <span class="location"></span></h3>
+      <p>
+         "You <span class="whoElse"></span> will be <span class="accomodations"></span> where you will be <span class="activity"></span> ."
+      </p>
+       <!-- <p>
          "You <span class="whoElse"> will be <span class="accomodations"></span> and you will be <span class="activity"></span>  <span class="terrain"></span> where the weather is <span class="weather"></span>."
-       </p>
+       </p> -->
    </div>
-   <br></br>
   </body>
 </html>
