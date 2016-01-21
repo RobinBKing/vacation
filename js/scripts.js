@@ -13,8 +13,10 @@ $(document).ready(function() {
     var reasonable = $("input#reasonable").is(':checked');
     var budget = $("input#budget").is(':checked');
     var rustic = $("input#rustic").is(':checked');
-    var activity = [];
-    var terrain = "";
+    var activity = [""];
+    var activities = "";
+    var terrain = [];
+    var terrains = "";
     var weather = "";
 
     if(partner){
@@ -78,8 +80,8 @@ $(document).ready(function() {
 
     //activities
     // if($("input#hikingCheckbox").prop('checked')){
-    //   activity.push("hiking");
     //   alert(activity.length);
+    //   activity.push("hiking");
     // }
     // if($("input#swimmingCheckbox").prop('checked')){
     //   activity.push("swimming");
@@ -106,60 +108,46 @@ $(document).ready(function() {
     //     activities += " and " + activity[i];
     //   }
     // }
-    //   //terrain
-    //   var terrain = "";
-    //   if($("input#waterCheckbox").val()){
-    //     terrain = " on the water"
-    //   }
-    //   if($("input#beachCheckbox").val()){
-    //     if(terrain ! = ""){
-    //       terrain += " and on the beach";
-    //     }
-    //     else {
-    //       terrain = "on the beach"
-    //     }
-    //   }
-    //   if($("input#mountainsCheckbox").val()){
-    //     if(terrain ! = ""){
-    //       terrain += " and in the mountains";
-    //     }
-    //     else {
-    //       terrain = "in the mountains"
-    //     }
-    //   }
-    //   if($("input#desertCheckbox").val()){
-    //     if(terrain ! = ""){
-    //       terrain += " and in the desert";
-    //     }
-    //     else {
-    //       terrain = "in the desert"
-    //     }
-    //   }
-    //   //weather
-    //   var weather = "";
-    //   if($("input#hotHumid").val()){
-    //     weather = $("input#hotHumid").val();
-    //   }
-    //   else if($("input#coolMoist").val()){
-    //     weather = $("input#coolMoist").val();
-    //   };
-    //   else if($("input#africa").val()){
-    //     weather = $("input#africa").val();
-    //   };
-    //   else if($("input#hotDry").val()){
-    //     weather = $("input#hotDry").val();
-    //   };
-    //   else if($("input#coldCrisp").val()){
-    //     weather = $("input#coldCrisp").val();
-    //   };
+
+    //terrain
+      // if($("input#waterCheckbox").prop('checked')){
+      //   terrain.push( $("input#waterCheckbox").val());
+      // }
+      // if($("input#beachCheckbox").val()){
+      //   terrain.push( $("input#beachCheckbox").val());
+      // }
+      // if($("input#mountainsCheckbox").val()){
+      //   terrain.push( $("input#mountainsCheckbox").val());
+      // }
+      // if($("input#desertCheckbox").val()){
+      //   terrain.push( $("input#desertCheckbox").val());
+      //   }
+      // }
+
+    //weather
+      if($("input#hotHumid").is(':checked')){
+        weather = $("input#hotHumid").val();
+      }
+      if($("input#coolMoist").is(':checked')){
+        weather = $("input#coolMoist").val();
+      };
+      if($("input#africa").is(':checked')){
+        weather = $("input#africa").val();
+      };
+      if($("input#hotDry").is(':checked')){
+        weather = $("input#hotDry").val();
+      };
+      if($("input#coldCrisp").is(':checked')){
+        weather = $("input#coldCrisp").val();
+      };
 
     //fill classes
     $(".location").text(location);
     $(".whoElse").text(whoElse);
     $(".accomodations").text(accomodations);
-    // $(".activity").text(activities);
-    // $(".terrain").text(terrain);
-    // $(".weather").text(weather);
+    $(".activity").text(activities);
+    $(".terrain").text(terrains);
+    $(".weather").text(weather);
 
     $(".result").show();
     event.preventDefault();
